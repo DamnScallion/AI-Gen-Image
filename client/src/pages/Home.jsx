@@ -25,34 +25,34 @@ const Home = () => {
           Browse through a collection of imaginative and visually stunning
           images generate by DALL-E AI
         </p>
+      </div>
 
-        <div className="mt-16">
-          <FormField />
-        </div>
+      <div className="mt-16">
+        <FormField />
+      </div>
 
-        <div className="mt-10">
-          {loading ? (
-            <div className="flex justify-center items-center">
-              <Loader />
-            </div>
-          ) : (
-            <>
-              {searchText && (
-                <h2 className="font-medium text-[#666e75] text-xl mb-3">
-                  Showing result for{" "}
-                  <span className="text-[#222328]">{searchText}</span>
-                </h2>
+      <div className="mt-10">
+        {loading ? (
+          <div className="flex justify-center items-center">
+            <Loader />
+          </div>
+        ) : (
+          <>
+            {searchText && (
+              <h2 className="font-medium text-[#666e75] text-xl mb-3">
+                Showing result for{" "}
+                <span className="text-[#222328]">{searchText}</span>
+              </h2>
+            )}
+            <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
+              {searchText ? (
+                <RenderCards data={[]} title="No search results found" />
+              ) : (
+                <RenderCards data={[]} title="No posts found" />
               )}
-              <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
-                {searchText ? (
-                  <RenderCards data={[]} title="No search results found" />
-                ) : (
-                  <RenderCards data={[]} title="No posts found" />
-                )}
-              </div>
-            </>
-          )}
-        </div>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );
