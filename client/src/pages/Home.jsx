@@ -81,7 +81,7 @@ const Home = () => {
           labelName="Search posts"
           type="text"
           name="name"
-          placeholder="Search posts"
+          placeholder="Enter some keywords to search images"
           value={searchText}
           handleChange={handleSearchChange}
         />
