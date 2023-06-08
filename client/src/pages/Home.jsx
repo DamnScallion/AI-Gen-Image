@@ -78,10 +78,10 @@ const Home = () => {
 
       <div className="mt-16">
         <FormField
-          labelName="Search posts"
+          labelName="Search images"
           type="text"
           name="name"
-          placeholder="Enter some keywords to search images"
+          placeholder="Enter some keywords"
           value={searchText}
           handleChange={handleSearchChange}
         />
