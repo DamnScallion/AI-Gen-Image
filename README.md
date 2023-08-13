@@ -3,7 +3,7 @@
 ###### Currently on a free MongoDB cluster.
 
 # 🧱Stack
-### MERN + Vite + OpenAI
+### (MERN + Vite + OpenAI)
 
 # 🔥Deployment
 ### Server: Render
