@@ -10,3 +10,5 @@
 ### Client: Hosinger
 ### Database: MongoDB
 ### CDN: Cloudinary
+
+###### Image quality too high to affect first content painting time.
