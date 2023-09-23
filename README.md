@@ -12,3 +12,4 @@
 ### CDN: Cloudinary
 
 ###### Image quality too high to affect first content painting time.
+###### Render Performance would be improved later.
